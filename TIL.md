@@ -159,6 +159,8 @@ content가 중앙에 옴 -> 중앙정렬 할 때 사용!(시험문제 나올 수
 
 
 
+
+
 ###### block
 
 ```
@@ -243,9 +245,10 @@ id(문서 하나) class (문서 여러번) tag (기본 태그)
 flex-direction : main axis 방향 설정
 flex-wrap : 컨테이너 내 배치되도록 설정
 flex-flow : direction + wrap shorthand
+flex-flow : row nowrap
 
 justify-content -> main축 기준으로 공간 배분
-[start, end, center, between, around, evenly]
+[flex-start, flex-end, center, space-between, space-around, space-evenly]
 
 align-content -> cross축 기준으로 공간 배분
 [start, end, center, between, around, evenly]
