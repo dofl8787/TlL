@@ -204,14 +204,6 @@ what means "NOT NULL"?
  none -> 원래 pk 값이 들어가는데 지금은 없어서 none 반환
 ```
 
-
-
-영상 2:49분 영상 초반에 
-
-list_display = (튜플 형태로 묶는다)
-
-
-
 ---
 
 Database API
@@ -612,14 +604,6 @@ Out[29]: <QuerySet [<Article: second>, <Article: third>]>
 ```
 
 ---
-
-# !!시험!!
-
-![image-20220309220228359](0309_MODEL.assets/image-20220309220228359.png)
-
----
-
-
 
 # Admin Site 
 
