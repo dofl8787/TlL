@@ -1,0 +1,111 @@
+
+$ git init
+Initialized empty Git repository in C:/Users/kim/startcamp/git-ignore/.git/
+
+$ touch a.txt b.txt c.txt
+
+$ mkdir subdir
+
+$ touch subdir/b.txt
+
+$ touch subdir/e.txt
+
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        b.txt
+        c.txt
+        subdir/
+
+
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        b.txt
+        c.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        a.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+
+$ git add .
+
+
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   .gitignore
+        new file:   a.txt
+
+
+$ git commit -m 'furst cimmit'
+[master (root-commit) 944cb8c] furst cimmit
+ 2 files changed, 18 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 a.txt
+
+$ git remote add origin https://github.com/dofl8787/git-ignore.git
+
+$ git remote -v
+origin  https://github.com/dofl8787/git-ignore.git (fetch)
+origin  https://github.com/dofl8787/git-ignore.git (push)
+
+
+$ git push -u origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 590 bytes | 590.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/dofl8787/git-ignore.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
